@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+    <script src="./assets/js/main.js" type="module" defer></script>
+    <title>Git | Fav</title>
+</head>
+<body> 
+    <div id="app">
+        <header>
+        <figure>
+            <img src="./assets/img/Gitfav.png" alt="logo Gitfav">
+        </figure>
+        <div class="search">
+          <label for="input-search" class="sr-only">Digite o Github username que quer favoritar</label>
+          <input id="input-search" type="text" placeholder="Digite o Github username que quer favoritar" />
+          <button>
+              <img src="./assets/img/star.svg" alt="estrela do botão">
+              Favoritar
+          </button>
+        </div>
+        </header>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Repositórios</th>
+                    <th>Seguidores</th>
+                    <th>Ação</th>
+                </tr>  
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/CODE-LLAN-BR.png" alt="imagem de LeonardoNunes">
+                        <a href="https://github.com/CODE-LLAN-BR" target="_blank">
+                            <p>Leonardo Nunes</p>
+                            <span>CODE-LLAN-BR</span>
+                        </a>    
+                    </td>
+                    <td class="repositories">42</td>
+                    <td class="followers">2</td>
+                    <td>
+                        <button class="action">Remover</button>
+                    </td>      
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

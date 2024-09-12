@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: black;
+    color: antiquewhite;
+    font-size: 1.6rem;
+}
+
+#app{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 5rem;
+}
+
+header{
+    display: flex;
+    align-items: end;
+    justify-content:space-between;
+
+    margin: 11.2rem 0 8.8rem 0;
+}
+
+header figure img{
+    height: 3.2rem;
+}
+
+header label {
+    display: none;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+
+.search input {
+    height: 4.8rem;
+    width: 38rem;
+    border-radius: 5px;
+    padding: 1.2rem 3.2rem;
+    border:none;
+    font-size: 1.6rem;
+    background: #06181C;
+}
+
+.search button{
+    height: 4.8rem;
+    padding: 1.2rem 3.2rem;
+    border: none;   
+    border-radius: 5px;
+
+    background: #065E7C;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap:.8rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    color: white;
+
+    cursor: pointer;
+}
+
+table thead{
+    background-color: #092D38;
+    
+}
+
+table thead tr th{
+    padding: 1.6rem 4rem;
+}
+
+.user img{
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+}
