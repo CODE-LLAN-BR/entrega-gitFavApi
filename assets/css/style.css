@@ -4,14 +4,30 @@
     box-sizing: border-box;
 }
 
+
 :root{
     font-size: 62.5%;
+
+    --ff-standard: "Roboto", sans-serif;
+
+    --cc-white-100: #FFF;
+    --cc-black-100: #000;
+    --cc-white-80: #E1E1E6;
+    --bg-input-button: #065E7C;
+    --bg-input-label:#06181C;
+    --bg-thead:#092D38;
+    --cc-button-act:#F75A68;
 }
 
 body{
     background-color: black;
-    color: antiquewhite;
+    color: var(--cc-white-80);
+    
     font-size: 1.6rem;
+}
+body, *,button{
+    font-family: var(--ff-standard);
+
 }
 
 #app{
@@ -26,6 +42,7 @@ header{
     justify-content:space-between;
 
     margin: 11.2rem 0 8.8rem 0;
+    
 }
 
 header figure img{
@@ -48,8 +65,10 @@ header label {
     border-radius: 5px;
     padding: 1.2rem 3.2rem;
     border:none;
+
     font-size: 1.6rem;
-    background: #06181C;
+
+    background: var(--bg-input-label);
 }
 
 .search button{
@@ -58,7 +77,7 @@ header label {
     border: none;   
     border-radius: 5px;
 
-    background: #065E7C;
+    background: var(--bg-input-button);
 
     display: flex;
     text-align: center;
@@ -68,22 +87,128 @@ header label {
     font-weight: 700;
     text-transform: uppercase;
 
-    color: white;
+    color: var(--cc-white-100);
+
+    cursor: pointer;
+
+    transition: .3s;
+}
+.search button:hover{
+    background-color: #4A808C;
+}
+
+#table{
+    width: 90rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #4A808C;
+
+    border-radius: 1.2rem;
+    
+}
+
+table thead{
+    background-color: var(--bg-thead);
+    
+    display: flex;
+
+    font-size: 2rem;
+    
+    line-height: 3.2rem;
+    border-top-left-radius: 1.2rem;
+    border-top-right-radius: 1.2rem ;
+    
+}
+
+tr th {
+    padding: 1.6rem 2.4rem 1.6rem 4rem;
+}
+
+
+tr{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    
+}
+
+
+.table-user{
+    width: 30rem;
+    text-align: start;
+    padding-left: 4rem;
+    font-weight: 700;
+}
+
+.table-rep ,
+.table-flw ,
+.table-act {
+    width: 20rem;
+    padding-left: 4rem;
+
+    font-weight: 700;
+
+    font-size: 2rem;
+}
+.table-act button{
+    background-color: transparent;
+    border: none;
+
+    color:var(--cc-button-act);
+
+    font-size: 2rem;
+    font-weight: 700;
 
     cursor: pointer;
 }
 
-table thead{
-    background-color: #092D38;
+
+tr td{
+    padding: 2.4rem;
+}
+
+#user{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
     
 }
-
-table thead tr th{
-    padding: 1.6rem 4rem;
+#user span{
+    font-weight: 400;
+    font-size: 1.6rem;
 }
 
-.user img{
+
+#user img{
     height: 56px;
     width: 56px;
     border-radius: 50%;
 }
+#user a{
+    text-decoration: none;
+    color:var(--cc-white-80) ;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+
+    
+}
+
+tbody tr:nth-child(even) {
+    border-top:1px solid #4A808C;
+    border-bottom: 1px solid #4A808C;
+    background-color: #06181C;
+}
+
+tbody tr:nth-child(odd){
+    background: #06161B80;
+    
+    
+}
+tbody :last-child{
+    border-bottom-left-radius:1.2rem;
+    border-bottom-right-radius:1.2rem;
+    /* border-bottom: none; */
+}
+
+

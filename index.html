@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
     
     <script src="./assets/js/main.js" type="module" defer></script>
     <title>Git | Fav</title>
@@ -25,28 +30,45 @@
         </div>
         </header>
 
-        <table>
+        <table id="table">
             <thead>
                 <tr>
-                    <th>Usuário</th>
-                    <th>Repositórios</th>
-                    <th>Seguidores</th>
-                    <th>Ação</th>
+                    <th class="table-user">Usuário</th>
+                    <th class="table-rep">Repositórios</th>
+                    <th class="table-flw">Seguidores</th>
+                    <th class="table-act">Ação</th>
                 </tr>  
             </thead>
             <tbody>
                 <tr>
-                    <td class="user">
+                    <td id="user" class="table-user">
                         <img src="https://github.com/CODE-LLAN-BR.png" alt="imagem de LeonardoNunes">
                         <a href="https://github.com/CODE-LLAN-BR" target="_blank">
                             <p>Leonardo Nunes</p>
                             <span>CODE-LLAN-BR</span>
                         </a>    
                     </td>
-                    <td class="repositories">42</td>
-                    <td class="followers">2</td>
-                    <td>
-                        <button class="action">Remover</button>
+                    <td id="repositories" class="table-rep">42</td>
+                    <td id="followers" class="table-flw">2</td>
+                    <td
+                    id="action" class="table-act">
+                        <button >Remover</button>
+                    </td>      
+                </tr>
+
+                <tr>
+                    <td id="user" class="table-user">
+                        <img src="https://github.com/CODE-LLAN-BR.png" alt="imagem de LeonardoNunes">
+                        <a href="https://github.com/CODE-LLAN-BR" target="_blank">
+                            <p>Leonardo Nunes</p>
+                            <span>CODE-LLAN-BR</span>
+                        </a>    
+                    </td>
+                    <td id="repositories" class="table-rep">42</td>
+                    <td id="followers" class="table-flw">2</td>
+                    <td
+                    id="action" class="table-act">
+                        <button >Remover</button>
                     </td>      
                 </tr>
             </tbody>
